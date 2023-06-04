@@ -1,0 +1,21 @@
+
+#singleProduct{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    padding: 30px 10px;
+}
+
+.singleProduct-image-section{
+    
+}
+
+.singleProduct-data-section p,h2{
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px){
+    #singleProduct{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,23 @@
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.main-image-div{
+    display: flex;
+    justify-content: center;
+}
+
+.main-image-div img{
+    width: 300px;
+    height: 300px;
+}
+
+
+.random-images{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    justify-content:space-evenly;
+}

@@ -1,0 +1,40 @@
+
+.ADD-TO-CART-DIV{
+    padding: 0px 0px;
+}
+
+.ADD-TO-CART-DIV .quantity{
+    font-size: 1.2rem;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.quantity p{
+    padding: 0px 20px;
+}
+
+.quantity .Increase, .Decrease{
+   cursor: pointer;
+}
+
+.Add-To-Cart-btn{
+    text-decoration: none;
+    /*max-width: auto;*/
+    background-color: rgb(98 84 243);
+    color: rgb(255 255 255);
+    padding: 1rem 2rem;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;  
+}
+
+.Add-To-Cart-btn:hover{
+    transform: scale(0.96);
+}
+
