@@ -1,9 +1,35 @@
-.first-part img{
+
+.first-part{
     text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.first-part h3{
+    font-size: 1.2rem;
+}
+
+.first-part img{
     width: 100px;
     height: auto;
 }
 
-.product-navlink{
-    text-align: center;
+.second-part{
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.second-part p{
+    font-size: 1.1rem;
+}
+
+
+
+.Add-To-Cart-Link{
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}
+
+.Add-To-Cart-Link button{
+  width: 100%;
 }

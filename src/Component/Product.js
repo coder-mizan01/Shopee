@@ -10,7 +10,11 @@ const Product = ({ product }) => {
     title,
     images,
     price,
-    thumbnail
+    thumbnail,
+    rating,
+    brand,
+  
+    
     
   } = product;
 
@@ -21,13 +25,20 @@ const Product = ({ product }) => {
      <NavLink className='product-navlink' to={`/singleproduct/${id}`}>
         <div className="first-part">
           <img src={images[0]} alt={thumbnail} /> 
+          <h3>{title}</h3>
         </div>
 
         <div className="second-part">
-           <h3>{title}</h3>
-           <p>{price}</p> 
+           <p>Brand : {brand}</p> 
+           <p>Rating : {rating}</p>  
+           <p>Price : {price}</p>
+       
         </div>
      </NavLink>
+
+     <NavLink to='/Cart' className='Add-To-Cart-Link'>
+           <button>Add To Cart</button>
+       </NavLink>
     </>
   );
 };

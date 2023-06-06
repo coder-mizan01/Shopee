@@ -1,7 +1,7 @@
 
 img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: auto;
 }
 
 .main-image-div{
@@ -10,7 +10,7 @@ img{
 }
 
 .main-image-div img{
-    width: 300px;
+    width: 350px;
     height: 300px;
 }
 

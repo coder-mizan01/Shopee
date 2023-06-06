@@ -1,0 +1,20 @@
+
+.Cart{
+    padding: 10px 20px;
+}
+.cart_heading{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.cart-hide{
+
+}
+
+@media (max-width:768px) {
+ .cart-hide{
+    display: none;
+ }
+ .cart_heading{
+    grid-template-columns: repeat(3,1fr);
+}
+}

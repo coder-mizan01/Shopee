@@ -17,7 +17,7 @@ const HomePageProducts = () => {
   return (
     <>
    {isLoading && <div>...Loading</div>}
-   <section id='products'>
+   <section id='HomeProducts'>
 
     {HomeProducts.map((product)=>{
       return <div className='product' key={product.id}>
