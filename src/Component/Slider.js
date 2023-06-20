@@ -27,7 +27,7 @@ const Slider = () => {
 
           <div className="image-elemnt">
             
-            <img src="hero.jpg" alt="" /> 
+            <img src="pandamart.jpg" alt="" /> 
 
           </div>
         </div>

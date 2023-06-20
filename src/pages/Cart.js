@@ -21,7 +21,7 @@ const Cart = () => {
           <p className="cart-hide">Subtotal</p>
           <p>Remove</p>
         </div>
-        <hr />
+
 
         <div className="cart-item">
           {Cart.map((curElm)=>{

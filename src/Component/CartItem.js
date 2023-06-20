@@ -1,22 +1,37 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 //component
 
+//icons 
+
+import {FaTrash} from "react-icons/fa"
+
 //css
 import "../CSS/Cart.css"
-const CartItem = ({id,title,images,price}) => {
+
+//context
+import { GlobalCartContext } from '../ContextAPI/CartContext'
+
+import CartAmount from './CartAmount'
+const CartItem = ({id,title,images,price,count}) => {
+
+
+  const {RemovedCartItem} = GlobalCartContext();
+
+
   
   return (
-    <div className='cart-heading'>
+
           <div className="cart_heading">
-          <img src={images} alt="" />    
+          <img src={images} alt=""  style={{width:'80px',height:'auto'}} />    
           <p className="cart-hide">{price}</p>
-          <p className='quantity'></p> 
-          <p className="cart-hide">{price}</p>
-          <p>Remove</p>
+          <p>{count}</p> 
+          <p className="cart-hide">{price*count}</p>
+          <p>
+            <FaTrash onClick={()=>{RemovedCartItem(id)}} />
+          </p>
         </div>
         
-    </div>
   )
 }
 

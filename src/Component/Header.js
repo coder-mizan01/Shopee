@@ -33,7 +33,8 @@ const Header = () => {
            <li><NavLink to='/Products'>Products</NavLink></li>
            <li><NavLink to='/Contact'>Contact</NavLink></li>
            <li><NavLink to='/OrderTrack' >OrderTrack</NavLink></li>
-           <li><NavLink to='/Cart'><BsCart4 className="cart" />
+           <li><NavLink to='/Cart' className='random'>
+            <BsCart4 className="cart" />
            <span className="cart-trolley">5</span>
            </NavLink></li>
          

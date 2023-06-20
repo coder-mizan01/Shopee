@@ -77,7 +77,9 @@ li {
     font-size: 1.5rem;
     cursor: pointer;
 }
-.cart{
+
+.random{
+
     position: relative;
 }
 .cart-trolley{
@@ -90,8 +92,8 @@ li {
     color: #FFFFFF;
     position: absolute;
     border-radius: 50%;
-    top: 6%;
-    right: 7%;
+    top: 30%;
+    right: -60%;
 
 
 }
@@ -130,7 +132,7 @@ li {
         padding: 1rem 0rem;
       }
       .cart-trolley{
-        top:85%;
-        right: 43%;
+        top:32%;
+        right: -60%;
       }
 }

@@ -27,17 +27,17 @@ const Product = ({ product }) => {
           <img src={images[0]} alt={thumbnail} /> 
           <h3>{title}</h3>
         </div>
-
+      </NavLink>
         <div className="second-part">
            <p>Brand : {brand}</p> 
            <p>Rating : {rating}</p>  
            <p>Price : {price}</p>
        
         </div>
-     </NavLink>
 
-     <NavLink to='/Cart' className='Add-To-Cart-Link'>
-           <button>Add To Cart</button>
+
+     <NavLink to={`/singleproduct/${id}`} className='Add-To-Cart-Link'>
+           <button>see more</button>
        </NavLink>
     </>
   );

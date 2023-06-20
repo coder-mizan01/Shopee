@@ -1,0 +1,42 @@
+
+#order-track{
+    background-color:#F1F2F4;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.order-track-title{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.order-id-div,.order-number-div, label{
+  display:block;
+  margin: 5px;
+
+}
+
+.order-id-div input{
+    width: 400px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.order-number-div input{
+    width: 400px;
+    outline: none;
+    border: 1px solid black;
+    padding : 8px 10px;
+}
+
+.order-track-button{
+    display: inline-block;
+    margin: 15px 0px;
+    width:400px;
+    padding: 8px 0px; 
+    background-color: #6254F3;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+}

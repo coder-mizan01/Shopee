@@ -15,11 +15,9 @@ root.render(
   <>
     <Contextfun>
       <FilterContextProvider>
-      <Countprovider>
         <CartContextprovider>
         <App />
         </CartContextprovider >
-        </Countprovider>
       </FilterContextProvider>
     </Contextfun>
   </>

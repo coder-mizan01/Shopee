@@ -1,14 +1,19 @@
 import React from 'react'
 
-import {GlobalContext} from "../ContextAPI/Context"
 
 
+//component
+import ContactC from '../Component/Contact';
 const Contact = () => {
 
-  const {name} = GlobalContext();
 
   return (
-    <div>{name}</div>
+     <>
+
+     <ContactC />
+     
+     </>
+
   )
 }
 

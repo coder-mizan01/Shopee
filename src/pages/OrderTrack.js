@@ -1,8 +1,14 @@
 import React from 'react'
 
+//component
+
+import Ordertrack from '../Component/Ordertrack'
+
 const OrderTrack = () => {
   return (
-    <div>OrderTrack</div>
+    <>
+   <Ordertrack />
+    </>
   )
 }
 

@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 //Component
 import MyImage from "../Component/MyImage";
-import {AddToCart} from "../Component/AddToCart";
+import AddToCart from "../Component/AddToCart";
 import Rating from "../Component/Rating";
 
 //css

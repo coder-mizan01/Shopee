@@ -24,6 +24,17 @@ const CartReducer = (state,action) => {
         }
 
     }
+
+    if(action.type==="REMOVED_CART_ITEM"){
+        let updatedCart = state.Cart.filter((curItem)=>{
+            return curItem.id !== action.payload;
+        })
+        return{
+            ...state,
+            Cart : updatedCart,
+        }
+    }
+
     return state;
 }
 

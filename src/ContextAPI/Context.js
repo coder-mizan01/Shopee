@@ -7,10 +7,11 @@ import axios from "axios";
 //reducer
 import reducer from "../reducer/reducer";
 
-const ContextApi = createContext();
-//const API = 'https://api.pujakaitem.com/api/products';
 
-//const API = 'https://fakestoreapi.com/products'
+const ContextApi = createContext();
+
+
+
 
 const API = 'https://dummyjson.com/products';
 

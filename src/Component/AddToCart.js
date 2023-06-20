@@ -1,25 +1,16 @@
-import React, { useState,createContext, useContext } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 
 //components
-
+import CartAmount from "./CartAmount";
 //icons
-import { FaMinus, FaPlus } from "react-icons/fa";
 
 //css
 import "../CSS/AddToCart.css"
+
 //cartContext
 import { GlobalCartContext } from "../ContextAPI/CartContext";
-
-const AddToCartContext = createContext();
-
-const Countprovider = ({children,count}) =>{
-   console.log(count);
-  return <AddToCartContext.Provider value={{count}}>
-   {children}
-  </AddToCartContext.Provider>
-}
 
 
 
@@ -51,14 +42,11 @@ const AddToCart = ({ products }) => {
 
   return (
     <>
-       <Countprovider count={count} />
+
       <div className="ADD-TO-CART-DIV">
-        <div className="quantity">
-          <FaPlus onClick={Increase} className="Increase" />
-          <p>{count}</p> 
-          <FaMinus onClick={Decrease}  className="Decrease" />
-        </div>
-        <NavLink to="/Cart" onClick={()=>AddToCart(id,price,products)}>
+        <CartAmount count={count} Increase={Increase} Decrease={Decrease} />
+
+        <NavLink to="/Cart" onClick={()=>AddToCart(id,price,count,products)}>
           <button className='Add-To-Cart-btn'>ADD TO CART</button>
         </NavLink>
       </div>
@@ -66,4 +54,4 @@ const AddToCart = ({ products }) => {
   );
 };
 
-export {AddToCart,Countprovider,AddToCartContext};
+export default AddToCart;

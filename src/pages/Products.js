@@ -10,13 +10,22 @@ import "../CSS/Products.css"
 
 const Products = () => {
 
-  const {AllProducts} = GlobalFilterContext();
+  const {filterProducts,Sorting} = GlobalFilterContext();
 
   return (
     <>
+      <form action="#">
+      <label htmlFor="sort"></label>
+      <select name="sort" id="sort" onClick={Sorting} >
+         <option value="lowest">Price (lowest)</option>
+         <option value="highest">Price (Highest)</option>
+         <option value="a-z">Price (A - Z)</option>
+         <option value="z-a">Price (Z - A)</option>
+      </select>
+    </form>
   <section id='allproducts'>
 
-{AllProducts.map((product)=>{
+ {filterProducts.map((product)=>{
   return <div className='product' key={product.id}>
        <Product product={product}  />
    </div>

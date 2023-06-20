@@ -16,12 +16,7 @@ const reducer = (state,action) => {
         }
     case "ADD_PRODUCTS":
       const HomeProducts = action.payload;
-      HomeProducts.pop();
-      HomeProducts.pop();
-      HomeProducts.pop();
-      HomeProducts.pop();
-      HomeProducts.pop();
-      HomeProducts.pop();
+
         return {
             ...state,
             isLoading : false,

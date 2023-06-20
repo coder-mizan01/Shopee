@@ -10,26 +10,56 @@
 }
 
 .first-part img{
-    width: 100px;
-    height: auto;
+    width: 50%;
+    height: 100px;
 }
 
 .second-part{
     box-sizing: border-box;
     padding: 0px 20px;
+    
 }
 .second-part p{
     font-size: 1.1rem;
+    font-weight: 700;
 }
 
 
 
 .Add-To-Cart-Link{
+
  position: absolute;
  bottom: 0;
  width: 100%;
+
 }
 
 .Add-To-Cart-Link button{
   width: 100%;
+  background-color: #6254F3;
+  border: none;
+  padding: 5px 0px 5px 0px;
+  margin: 5px 0px 0px 0px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+
+@media (max-width:990px){
+   
+}
+
+
+@media (max-width:768px){
+
+    .first-part img{
+        width: 70%;
+    }
+    .first-part h3{
+        font-size: 1rem;
+    }
+    .second-part p{
+        font-size: 1rem;
+    }
 }
